@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-2aa39f447da27131deb4fdc709bfbeb7932646f0	puppet-corosync-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+4750efd430b6775b9c71aead6f4d695583b83946       	puppet-corosync-distgit-core
+2aa39f447da27131deb4fdc709bfbeb7932646f0        	puppet-corosync-distgit-ptl
+global:Registered-Users		Registered Users
