@@ -19,7 +19,7 @@ Requires:       puppet >= 2.7.0
 This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
