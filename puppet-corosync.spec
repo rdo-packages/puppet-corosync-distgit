@@ -7,8 +7,8 @@
 
 
 Name:           puppet-corosync
-Version:        XXX
-Release:        XXX
+Version:        5.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
 License:        Apache License, Version 2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.0.0-1.f3ada25.git
+- Newton update 5.0.0 (f3ada2529dfbd7202a94e9c151e916dca32d8f4a)
+
 
