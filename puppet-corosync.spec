@@ -53,3 +53,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 - Newton update 5.0.0 (f3ada2529dfbd7202a94e9c151e916dca32d8f4a)
 
 
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-corosync/commit/a8202cefd1de60f9cafcfd870a819985914be565
