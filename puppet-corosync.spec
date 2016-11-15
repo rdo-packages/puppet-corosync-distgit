@@ -1,5 +1,5 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%global commit f3ada2529dfbd7202a94e9c151e916dca32d8f4a
+%global commit 915bb72ba481c2bf08d4c128e3ae89e69a8a6d43
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -7,7 +7,7 @@
 
 Name:           puppet-corosync
 Version:        5.0.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
 License:        Apache License, Version 2.0
 
@@ -48,6 +48,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 5.0.0-2.915bb72.git
+- Newton update 5.0.0 (915bb72ba481c2bf08d4c128e3ae89e69a8a6d43)
+
 * Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.0.0-1.f3ada25.git
 - Newton update 5.0.0 (f3ada2529dfbd7202a94e9c151e916dca32d8f4a)
 
