@@ -9,7 +9,7 @@ Name:           puppet-corosync
 Version:        XXX
 Release:        XXX
 Summary:        This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
-License:        Apache License, Version 2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppet-community/puppet-corosync
 
