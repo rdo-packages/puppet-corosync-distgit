@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%global commit f3ada2529dfbd7202a94e9c151e916dca32d8f4a
+%global commit f438aa583b59fe312347ff080a7ca99ba058c7e9
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-corosync
-Version:        XXX
-Release:        XXX
+Version:        5.0.0
+Release:        3%{?alphatag}%{?dist}
 Summary:        This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
 License:        ASL 2.0
 
@@ -48,4 +48,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 5.0.0-3.f438aa5git
+- Ocata update 5.0.0 (f438aa583b59fe312347ff080a7ca99ba058c7e9)
 
