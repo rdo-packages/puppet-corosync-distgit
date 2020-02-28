@@ -53,4 +53,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 - Update to post release 6.0.2-rc0 (961add3035fa4b57bf8cbd733a887e8b42d4dada)
 
 
-
