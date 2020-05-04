@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%global commit f3ada2529dfbd7202a94e9c151e916dca32d8f4a
+%global commit 2a27f931b4929ef2c29c59565d2f4ce10dc1fc7b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-corosync
-Version:        XXX
-Release:        XXX
+Version:        6.0.2-rc0
+Release:        1%{?alphatag}%{?dist}
 Summary:        This module is a set of manifests and types/providers for quickly setting up highly available clusters using Corosync
 License:        ASL 2.0
 
@@ -48,5 +48,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/corosync/
 
 
 %changelog
+* Mon May 04 2020 RDO <dev@lists.rdoproject.org> 6.0.2-rc0-1.2a27f93git
+- Update to post 6.0.2-rc0 (2a27f931b4929ef2c29c59565d2f4ce10dc1fc7b)
+
 
 
