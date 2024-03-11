@@ -1,9 +1,4 @@
-%{!?upstream_version: %global upstream_version %{commit}}
-%global commit f3ada2529dfbd7202a94e9c151e916dca32d8f4a
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           puppet-corosync
 Version:        XXX
@@ -13,7 +8,7 @@ License:        ASL 2.0
 
 URL:            https://github.com/puppet-community/puppet-corosync
 
-Source0:        https://github.com/puppet-community/%{name}/archive/%{commit}.tar.gz#/%{name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppet-community/%{name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
